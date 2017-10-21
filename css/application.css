@@ -1,0 +1,37 @@
+html{
+  overflow: hidden;
+}
+
+body {
+  overflow: hidden;
+}
+
+#list_text_function {
+  display: none;
+}
+
+.draggable {
+  width: 150px;
+  height: 150px;
+  padding: 0.5em;
+  margin: auto;
+  margin-top: 30%;
+  background: #aabbbb;
+}
+
+.drag-resize{
+  position: absolute;
+  border: 1px dashed transparent;
+  z-index: 999;
+  padding: 5px;
+  margin-top: -5px;
+  margin-left: -5px;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.drag-resize:hover{
+  border-color: rgb(0, 150, 253);
+  cursor: move;
+  /*transition: all 0.25s;*/
+}
